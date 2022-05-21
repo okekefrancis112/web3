@@ -1,43 +1,74 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Okada</title>
+  </head>
+  <body>
+    <h1>WEB 3 Okada Project</h1>
+    <form action="">
+      <label for="full-name">
+        Full Name
+        <input type="text" name="full-name" id="full-name" />
+      </label>
+      <label for="tier-1">
+        Tier One - (7% Interest) (Capital: #10 000)
+        <input
+          type="radio"
+          name="tier"
+          data-tier="Tier One"
+          id="tier-1"
+          value="10000"
+        />
+      </label>
+      <label for="tier-2">
+        Tier Two - (12% Interest) (Capital: #20 000)
+        <input
+          type="radio"
+          name="tier"
+          data-tier="Tier Two"
+          id="tier-2"
+          value="20000"
+        />
+      </label>
+      <label for="tier-3">
+        Tier Three - (25% Interest) (Capital: #30 000)
+        <input
+          type="radio"
+          name="tier"
+          data-tier="Tier Three"
+          id="tier-3"
+          value="30000"
+        />
+      </label>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Web3Test</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles.css">
-        <script src="/app.js" defer></script>
-    </head>
-    <body>
-        <h2> Web3 Test</h2>
-        
-        <form>
-            <input type="text" name="fullname" id="name" placeholder="Full Name">
-            <label for="tier-1">
-                Tier-1
-                <input type="radio" name="tier" id="tier-1">
-            </label>
-            <label for="tier-2">
-                Tier-2
-                <input type="radio" name="tier" id="tier-2">
-            </label>
-            <label for="tier-3">
-                Tier-3
-                <input type="radio" name="tier" id="tier-3">
-            </label>
-            <label for="interest">
-                Interest
-                <input type="text" name="interest" id="interest" value="0" disabled>
-            </label>
-            <label for="amount">
-                Amount
-                <input type="text" name="amount" id="amount" value="0" disabled>
-            </label>
-            
-        </form>
+      <button type="submit" id="submit">Save</button>
+    </form>
 
-
-    </body>
+    <table>
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Tier</th>
+          <th>Interest</th>
+          <th>Capital</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="t-body"></tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total Amount:</td>
+          <td id="total-amount"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
