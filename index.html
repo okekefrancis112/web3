@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,11 +7,37 @@
         <title>Web3Test</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/app.js" defer></script>
     </head>
     <body>
         <h2> Web3 Test</h2>
         
-        <script src="" async defer></script>
+        <form>
+            <input type="text" name="fullname" id="name" placeholder="Full Name">
+            <label for="tier-1">
+                Tier-1
+                <input type="radio" name="tier" id="tier-1">
+            </label>
+            <label for="tier-2">
+                Tier-2
+                <input type="radio" name="tier" id="tier-2">
+            </label>
+            <label for="tier-3">
+                Tier-3
+                <input type="radio" name="tier" id="tier-3">
+            </label>
+            <label for="interest">
+                Interest
+                <input type="text" name="interest" id="interest" value="0" disabled>
+            </label>
+            <label for="amount">
+                Amount
+                <input type="text" name="amount" id="amount" value="0" disabled>
+            </label>
+            
+        </form>
+
+
     </body>
 </html>
